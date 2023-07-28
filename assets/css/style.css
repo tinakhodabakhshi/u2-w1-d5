@@ -1,0 +1,189 @@
+/* Stili per la navbar */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: auto;
+  padding: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  min-height: 100vh;
+}
+.navbar {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffc017;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid black;
+}
+
+.navbar__logo img {
+  height: 30px;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar__menu li {
+  margin-right: 20px;
+}
+
+.navbar__menu li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 8px 16px;
+  background-color: black;
+  margin-left: 20px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+.navbar__actions {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Stili per la navbar durante lo scroll */
+.navbar.scrolled {
+  background-color: white; /* Cambia il colore di background quando si scrolla */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero-container {
+  position: relative;
+  height: 448px;
+  background-color: #ffc017;
+  width: 100%;
+}
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 585px;
+  height: 462px;
+}
+.container-flex {
+  width: 455px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+.container {
+  margin: 0 64px;
+  min-width: 0;
+  max-width: 1192px;
+}
+.content-flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0 64px;
+}
+.contetnt-flex2 {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  z-index: 1;
+  height: 100%;
+  padding-top: 93px;
+  padding-bottom: 92px;
+  font-weight: 400;
+
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  margin: 0 64px;
+}
+.text1 {
+  letter-spacing: -0.05em;
+  line-height: 74px;
+  font-size: 100px;
+  color: black;
+  font-weight: 400;
+  margin: 0;
+}
+.btn1 {
+  padding: 8px 16px;
+  background-color: black;
+  margin-left: 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  width: 213px;
+}
+.second-part {
+  margin: 0 64px;
+  padding-top: 40px;
+}
+.trending {
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto;
+  align-items: center;
+  flex-direction: row;
+}
+.svg1 {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.trend {
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+.row {
+  display: flex;
+  flex-basis: 100%; /* Per far sì che le righe occupino l'intera larghezza del contenitore */
+}
+.column {
+  flex: 0 0 calc(33.33% - 10px); /* Ogni colonna occupa 33.33% della larghezza del contenitore meno 10px di spazio tra le colonne */
+  margin: 5px; /* Spazio tra le colonne */
+  padding: 20px; /* Padding all'interno delle colonne */
+}
+.container-left {
+  display: flex;
+  width: 405px;
+  height: 97px;
+  margin: 0px 0px 24px;
+}
+.container-left .item {
+  width: 40px;
+  height: 40px;
+}
+.container-left .item-right {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+}
+.column {
+  padding: 0;
+}
